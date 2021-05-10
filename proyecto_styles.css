@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes importadas */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body{
+    background-color: rgb(147, 207, 231);
+    font-family: 'Krona One', sans-serif;
+}
+
+.oscuro{
+    background-color: rgb(12, 15, 15);
+    color: white;
+}
+
+/* Esta es la parte de la cabecera */
+header{
+    background-color: black;
+    height: 120px;
+}
+
+header .titulo{
+    height: 65%;
+}
+
+header .titulo h1{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 15px;
+    margin-left: 20px;
+    position: relative;
+    top: 5px;
+    
+}
+
+header .subtitulo p{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+}
+
+/* Esta es la parte de la barra menú */
+
+.cont-menu{
+    background-color: rgb(32, 30, 30);
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.menu{
+    width: 80%;
+    margin: auto;
+}
+
+.icono-menu{
+    display: none;
+}
+
+
+.menu .barra-menu{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;    
+}
+
+.menu .barra-menu li{
+    display: inline-block;
+}
+
+.menu .barra-menu li a{
+    color: darkgrey;
+    
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px 27px;
+    min-width: 10px;
+    display: block;
+}
+
+#tema{
+    cursor: pointer;
+}
+
+.menu .barra-menu li a:hover{
+    color: white;
+    background-color: rgb(51, 50, 50);
+}
+
+/* Esta es la parte que hace que sea responsive */
+
+@media screen and (max-width: 551px){
+    header{
+        height: 190px;
+    }
+}
+@media screen and (max-width: 780px){
+
+    
+    .cont-menu{
+        background-color: rgb(32, 30, 30);
+        width: 100%;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+    }
+
+    .menu{
+        width: 25%;
+        float: left;
+    }
+
+/* Esta es la parte del boton "ver menú" */
+
+    .icono-menu{
+        display: inline-block;
+        font-size: 28px;
+        padding: 18px 20px;
+        color: darkgrey;
+        cursor: pointer;
+    }
+
+/* Esta es la parte que muestra o no el menú */
+    .menu .barra-menu{
+        display: none;
+    }
+    .menu ul.mostrar{
+        display: block;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .menu ul.mostrar li{
+        display: inline;
+    }
+    
+    .menu ul.mostrar li a{
+        color: darkgrey;
+        text-decoration: none;
+        width: 100px;
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+    }
+
+    .menu ul.mostrar li a:hover{
+        color: white;
+         background-color: rgb(51, 50, 50);
+         border-radius: 10px;
+    }
+    
+
+    .contenido-desplegable{
+        display: none;
+        position: absolute;
+        width: 160px;
+        z-index: 1;
+        border-radius: 20px;
+        right: -160px;
+        top: -80px;
+    }
+    .contenido-desplegable a{
+        background-color: rgb(32, 30, 30);
+        border: 1px darkgray solid;
+        border-radius: 10px;
+    }
+
+}
+
+/* Esto es la parte del desplegable de la barra/menú */
+
+.desplegable{
+    position: relative;
+}
+
+.contenido-desplegable{
+    display: none;
+    position: absolute;
+    width: 160px;
+    z-index: 1;
+   border-radius: 20px;
+}
+
+.contenido-desplegable a{
+    background-color: rgb(32, 30, 30);
+}
+
+.desplegable:hover .contenido-desplegable{
+    display: block;
+} 
+
+
+
+
+
+/* Esta es la parte del contenido */
+
+    /* Lo primero la imagen del principio de la pag principal */
+
+.cont-img{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.imagen{
+    width: 100%;
+    border-radius: 20px;
+}
+
+    /* Esto ya es el contenido */
+
+    
+.contenido{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+    /* Esto es el estilo de la cabecera de las pags secundarias */
+
+.cabecera-contenido{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 150px auto;
+    position: relative;
+    z-index: -1;
+}
+
+.span-titulo{
+    background-color: rgb(147, 207, 231);
+}
+
+.span-titulo-oscuro{
+    background-color: rgb(12, 15, 15);
+}
+
+.cabecera-contenido h1:before{
+    content: "";
+    display: block;
+    width: 23%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+.cabecera-contenido h1:after{
+    content: "";
+    display: block;
+    width: 23%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+    /* Este es el formato de los bloques de contenido */
+
+.bloque-cont{  /* Bloque de contenido normal */
+  background-color: rgba(24, 23, 23, 0.103);
+  width: 95%;
+  padding-bottom: 50px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bloque-cont-color-dark{ /*esto es el color de los contenedores de contenido cuando el tema es oscuro */
+    background-color: rgba(147, 207, 231, .2);
+}
+
+.bloque-cont .img-right{  /* Bloque de contenido con imagen a la derecha*/
+    float: right;
+    width: 50%;
+    margin: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.bloque-cont .img-left{  /* Bloque de contenido con imagen a la izquierda*/
+    float: left;
+    width: 50%;
+    margin: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.bg-image{
+    height: 600px;
+    width: 70%;
+    margin: auto;
+    background-image: url(imagenes/elTrap.jpg);
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 780px){
+      
+    .bloque-cont .img-right{  /* Bloque de contenido con imagen a la derecha*/
+        width: 80%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    .bloque-cont .img-left{  /* Bloque de contenido con imagen a la izquierda*/
+        width: 80%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+}
+
+.entrada{
+    font-size: 45px;
+    padding: 15px;
+}
+
+.contenido p{
+    font-size: 20px;
+    line-height: 1.5;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.contenido p a{
+    text-decoration: none;
+    color: teal;
+}
+
+/* Esta es la parte donde se aplican los estilos al indice con el efecto desplegable de la página principal */
+
+#contenedor-indice{
+    width: 70%;
+    margin: auto;
+    min-height: 60px;
+    overflow: hidden;
+    border-radius: 20px;  
+}
+
+.apartado{
+    width: 100%;
+    min-height: 60px;
+}
+
+.tema{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(11, 102, 138);
+    overflow: hidden;
+    border-bottom: 1px rgba(24, 23, 23, 0.103) solid;
+}
+
+.tema .tema-titulo{
+    margin: 10px;
+}
+
+.tema .tema-titulo a{
+    margin: 10px;
+    color: darkgray;
+}
+
+.tema .tema-titulo a:hover{
+    color: white;
+}
+
+.descripcion{
+    width: 100%;
+    height: 0;
+    background-color: rgb(32, 30, 30);
+    overflow: hidden;
+    transition:  0.5s;
+}
+
+.descripcion p{
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.apartado:hover .descripcion{
+    height: 180px;
+}
+
+@media screen and (max-width: 850px) {
+    .apartado:hover .descripcion{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 643px) {
+    .apartado:hover .descripcion{
+        height: 400px;
+    }
+}
+
+    /* Esta es la parte del estilo del indice de las páginas de contenido */
+
+.indice{
+    width: 80%;
+    margin: auto;
+}
+
+.indice li a{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+    color: teal;
+}
+
+.indice li a:hover{
+    color: white;
+}
+
+    /* Este es el estilo de los separadores */
+.separador{
+    border: 1px solid;
+    margin: 100px;
+}
+
+
+    /* Esta es la parte de los estilos del formulario de contacto */
+
+form{
+    width: 80%;
+    margin: auto;
+    padding: 20px 20px;
+    background-color: rgb(11, 102, 138, .3);
+    border-radius: 20px;
+}
+
+label{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.input{
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px black solid;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px black solid;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+.submit{
+    font-size: 15px;
+    padding: 10px;
+    width: 20%;
+    margin: auto;
+    display: block;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: rgba(11, 102, 138, 0.6);
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.submit:hover{
+    color: white;
+    background-color: rgba(11, 102, 138, 0.9);
+}
+
+/* Esta es la parte del footer */
+
+footer{
+    background-color: rgb(32, 30, 30);
+    height: auto;
+    padding-top: 40px;
+    margin-top: 100px;
+    color: white;
+}
+
+.footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-top h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.footer-top p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-top ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 30px 0;
+}
+
+.footer-top ul li{
+    margin: 0 20px;
+}
+
+.footer-top ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+.footer-top ul li a:hover{
+    color: rgb(147, 207, 231);
+}
+
+.footer-bot{
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bot p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bot span{
+    opacity: .4;
+    font-weight: 200;
+}

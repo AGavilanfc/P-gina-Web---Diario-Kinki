@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK - Contacto</title>
+    <link rel="stylesheet" href="proyecto_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    
+  <header>
+      <div class="titulo">
+        <h1>DIARIO KINKI</h1>
+      </div>
+      <div class="subtitulo">
+          <p>El blog de Kinkilleromedieval</p>
+      </div>
+  </header>
+
+  <nav class="cont-menu">
+      <div class="menu">
+        <span class="icono-menu">Ver menú</span>
+        <ul class="barra-menu">
+          <li><a href="proyecto.html">Inicio</a></li>
+          <li>
+           <div class="desplegable">
+              <a href="#" disabled>Índice</a>
+             <div class="contenido-desplegable">
+                <a href="españa80.html">España en los 80</a>
+                <a href="rap.html">Rap</a>
+                <a href="trap.html">Trap</a>
+                <a href="bakalao.html">La ruta del bakalao</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="fuentes.html">Fuentes</a></li>
+          <li><a href="formulario.html">Contacto</a></li>
+          <li><a id="tema">Tema</a></li>
+        </ul>
+      </div>
+  </nav>
+  
+<div class="contenido">  
+
+  
+<div class="cabecera-contenido">
+      <h1><span class="span-titulo">Contáctanos</span></h1>
+  </div>
+
+  <div class="bloque-cont">
+    <h2 class="entrada">Participar en el blog</h2>
+    
+    <p>¿Te gustaría participar en el blog con algún post? Rellena el siguiente formulario y nos pondremos en contacto contigo.</p>
+    
+    <form action="">
+
+      <div>
+        <label for="nombre">Nombre</label> <br><br>
+        <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre">
+      </div>
+      <br>
+
+      <div>
+        <label for="apellidos">Apellidos</label> <br><br>
+        <input class="input" type="text" id="apellidos" name="apellidos" placeholder="Primer y segundo apellido">
+      </div>
+      <br>
+
+      <div>
+        <label for="nacimiento">Fecha de nacimiento</label> <br><br>
+        <input class="input" type="date" id="nacimiento" name="nacimiento">
+      </div>
+      <br>
+
+      <div>
+        <label for="email">Correo electrónico</label> <br><br>
+        <input class="input" type="email" id="email" name="email" placeholder="corre@electronico.com">
+      </div>
+      <br>
+
+      <div>
+        <label for="post">¿De qué tema te gustaría hablar?</label> <br> <br>
+        <textarea name="post" id="post" cols="20" rows="10" placeholder="Escribe aquí tus sugerencias"></textarea>
+      </div>
+
+      <input type="submit" value="ENVIAR" class="submit"> 
+
+    </form>
+
+  </div>
+
+  <hr class="separador">
+
+  <div class="bloque-cont">
+    <h2 class="entrada">Reportar una publicación</h2>
+    
+    <p>Si quiere reportar algún error o está en desacuerdo con alguna publicación, rellene el siguiente formulario e intentaremos solucionar el problema lo antes posible.</p>
+    
+    <form action="">
+
+      <div>
+        <label for="nombre">Nombre</label> <br><br>
+        <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre">
+      </div>
+      <br>
+
+      <div>
+        <label for="apellidos">Apellidos</label> <br><br>
+        <input class="input" type="text" id="apellidos" name="apellidos" placeholder="Primer y segundo apellido">
+      </div>
+      <br>
+
+      <div>
+        <label for="nacimiento">Fecha de nacimiento</label> <br><br>
+        <input class="input" type="date" id="nacimiento" name="nacimiento">
+      </div>
+      <br>
+
+      <div>
+        <label for="email">Correo electrónico</label> <br><br>
+        <input class="input" type="email" id="email" name="email" placeholder="corre@electronico.com">
+      </div>
+      <br>
+
+      <div>
+        <label for="reporte">¿En qué publicación se encuentra el error o el problema?</label> <br><br>
+        <select name="reporte" id="reporte" class="input">
+          <option value="España en los 80">España en los 80</option>
+          <option value="Rap en España">Rap en España</option>
+          <option value="Trap en España">Trap en España</option>
+          <option value="La ruta del bakalao">La ruta del bakalao</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="post">Describa el problema que quiere reportar</label> <br> <br>
+        <textarea name="post" id="post" cols="20" rows="10" placeholder="Describa aquí su problema"></textarea>
+      </div>
+
+      <input type="submit" value="ENVIAR" class="submit"> 
+
+    </form>
+
+  </div>
+  
+
+  
+
+
+</div>
+
+
+<footer>
+
+  <div class="footer-top">
+    <h3>DIARIO KINKI</h3>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ab, molestias nostrum iste cupiditate dolorem</P>
+    <ul>
+      <li><a href="https://www.instagram.com/kinkilleromedieval/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    </ul>
+  </div>
+
+  <div class="footer-bot">
+    <p> Copyright &copy; 2021 aviso legal y política de privacidad. designed by <span>álvaro gavilán</span></p>
+  </div>
+
+</footer>
+
+
+</body>
+</html> 

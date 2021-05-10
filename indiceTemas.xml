@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indice>
+    <tema>
+        <nombre>España en los 80</nombre>
+        <descripcion>Articulo sobre rock radical vaso y movida madrileña</descripcion>
+        <apartados>
+            <apartado1>Intro</apartado1>
+            <apartado2>Rock radical vasco</apartado2>
+            <apartado3>Rock radical vasco II</apartado3>
+            <apartado4>Rock radical vasco III</apartado4>
+            <apartado5>Movida madrileña</apartado5>
+            <apartado6>Movida madrileña II</apartado6>
+            <apartado7>Movida madrileña III</apartado7>
+        </apartados>
+    </tema>
+
+    <tema>
+        <nombre>Rap en España</nombre>
+        <descripcion>Articulo sobre la evolución del rap en España</descripcion>
+        <apartados>
+            <apartado1>Rap en España I: Origen</apartado1>
+            <apartado2>Rap en España II</apartado2>
+            <apartado3>Rap en España III</apartado3>
+            <apartado4>Rap en España IV</apartado4>
+            <apartado5>Rap en España V</apartado5>
+        </apartados>
+    </tema>
+
+    <tema>
+        <nombre>Trap en España</nombre>
+        <descripcion>Articulo sobre la llegada y filosofia del trap en España</descripcion>
+        <apartados>
+            <apartado1>Trap en España</apartado1>
+            <apartado2>Trap en España II</apartado2>
+            <apartado3>Trap en España III</apartado3>
+            <apartado4>Trap en España IV</apartado4>
+        </apartados>
+    </tema>
+
+    <tema>
+        <nombre>La ruta del bakalao</nombre>
+        <descripcion>Articulo que trata el contexto histórico y social de la ruta del bakalao</descripcion>
+        <apartados>
+            <apartado1>Introduccion</apartado1>
+            <apartado2>La ruta del bakalao</apartado2>
+        </apartados>
+    </tema>
+</indice>
